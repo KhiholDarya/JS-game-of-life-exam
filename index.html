@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game of Life</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			height: 100vh;
+			margin: 0;
+			background-color: #f0f0f0;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.grid {
+			display: grid;
+			gap: 2px;
+		}
+
+		.cell {
+			width: 20px;
+			height: 20px;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.alive {
+			background-color: black;
+		}
+
+		.dead {
+			background-color: white;
+		}
+
+		button {
+			margin: 20px 0px 50px 0px;
+			/* padding: 10px 20px 10px 20px; */
+			height: 40px;
+			width: 70px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Game of Life</h1>
+		<div id="board" class="grid"></div>
+		<div class="button-box">
+			<button id="startButton">Start</button>
+			<button id="resetButton">Reset</button>
+		</div>
+	</div>
+	<script src="gameOfLife.js"></script>
+</body>
+
+</html>
